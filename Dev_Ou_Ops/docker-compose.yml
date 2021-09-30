@@ -1,0 +1,8 @@
+version: '3'
+services:
+  tp2:
+    build: .
+    image: tp2_dev_ou_ops
+    container_name: tp2_exercice
+    ports:
+      - '8098:80'
