@@ -1,4 +1,4 @@
-#Config : Différents paramètres du programme
+#Config : Différentes fonctions du programme
 import os, psutil, socket
 
 def ip_and_host():
