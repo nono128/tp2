@@ -4,5 +4,7 @@ services:
     build: .
     image: tp2_dev_ou_ops
     container_name: tp2_exercice
+    hostname: Oathkeeper
     ports:
-      - '8098:80'
+      - '8095:80'
+
