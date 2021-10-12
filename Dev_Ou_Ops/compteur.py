@@ -1,31 +1,29 @@
-#import cgitb
-#cgitb.enable()
+import os.path
 
 file_compteur = "compteur"
 
-
-import os.path
 
 
 def lire_compteur():
 
     if os.path.isfile(file_compteur):
-        print("Compteur existe") 
+        print("Compteur existe")
         fichier = open(file_compteur,'r')
 #Lecture fichier compteur
         nb_visiteurs = int(fichier.read())
 # "int" transforme le contenu en un nombre car on veut le nombre de visiteurs)
 
-    else:   
+    else:
         print("Compteur existe pas ")
-        nb_visiteurs = 0 
+        nb_visiteurs = 0
 #Le fichier n'existe pas / page jamais visitée
         fichier = open(file_compteur,'w')
 
     fichier = open(file_compteur,'w')
     fichier.write(str(nb_visiteurs+ 1))
-    print(nb_visiteurs+1, 'visites')
+    return nb_visiteurs+1
 
 
-lire_compteur()
+
+
 
