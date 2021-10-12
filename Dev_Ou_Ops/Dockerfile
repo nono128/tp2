@@ -12,7 +12,7 @@ RUN python3 -m pip install bottle psutil
 
 COPY main.py /data/main.py
 #  --> va copier "main.py" de ton systeme, et le mettre dans le fichier "main.py" dans ton conteneur 
-
+COPY compteur.py /data/compteur.py
 #RUN git clone https://github.com/nono128/tp2.git
 
 CMD ["python3","main.py"]
