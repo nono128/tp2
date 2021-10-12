@@ -13,7 +13,7 @@ def cpu():
 
 	print("The CPU usage is : ", cpu_usage, "%")
 
-
 def ram():
 	print('RAM memory % used:', psutil.virtual_memory()[2], "%")
+
 
